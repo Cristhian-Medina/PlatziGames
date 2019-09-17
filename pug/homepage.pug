@@ -1,0 +1,21 @@
+extend ./components/plantilla.pug
+block contenidos
+        .contenedor
+            aside.menu
+                h2 Menu
+                ul
+                    each enlace in enlaces
+                        li=enlace
+            section.intro
+                .intro__contenido
+                    // h2= titulo
+                    h2 #{titulo}
+                    p
+                        |Lorem ipsum dolor sit amet consectetur 
+                        |adipisicing elit. Dolorem hic et nemo, 
+                        |maiores id soluta similique doloribus 
+                        |consectetur quia sequi alias nostrum sunt 
+                        |in beatae, explicabo quasi dignissimos. 
+                        |Officia, ipsam?
+                        span Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    a.boton Leer más
