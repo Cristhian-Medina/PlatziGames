@@ -4,15 +4,18 @@
 	padding: 10px;
 	margin: 0 auto;
 	position: relative;
+
 	&__imagen {
 		width: 1320px;
 		position: absolute;
+
 		img {
 			width: 100%;
 			height: 624px;
 			object-fit: cover;
 		}
 	}
+
 	&__contenido {
 		width: 50%;
 		margin: 0 auto;
@@ -21,17 +24,21 @@
 		left: 0;
 		right: 0;
 		text-align: center;
-		color: #fff;
+		color: @color-claro;
 	}
+
 	&__categoria {
-		font-family: 'Oswald', sans-serif;
+		font-family: @fuente2;
 		text-transform: uppercase;
+		color: fade(@color-claro, 50%);
 	}
+
 	&__titulo {
-		font-family: 'Oswald', sans-serif;
+		font-family: @fuente2;
 		text-transform: uppercase;
 		font-size: 50px;
 	}
+
 	&__autor {
 		width: 150px;
 		margin: 0 auto;
@@ -39,16 +46,22 @@
 		top: 400px;
 		left: 0;
 		right: 0;
-		color: #fff;
+		color: @color-claro;
+
 		img {
 			width: 60px;
 			height: 50px;
 			float: left;
 			padding-right: 10px;
-			border-radius: 100%;
+			border-radius: 50%;
 		}
+
 		span {
 			display: inline-block;
+		}
+
+		&-titulo {
+			color: fade(@color-claro, 50%);
 		}
 	}
 }
