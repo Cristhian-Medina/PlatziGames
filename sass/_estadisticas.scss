@@ -1,0 +1,24 @@
+.estadisticas--perfil {
+  display: flex;
+  width: 70%;
+  height: 90px;
+  margin: 0 auto;
+  justify-content: space-around;
+  @include caja;
+  .stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  h3 {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    @include titulo($fuente2);
+  }
+  span {
+    font-size: 12px;
+    text-align: center;
+    @include titulo($fuente2);
+  }
+}

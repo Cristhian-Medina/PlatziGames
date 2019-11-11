@@ -6,15 +6,18 @@
 	position: relative;
 	background-color: @color-claro;
 	.sombra-caja;
+
 	&__imagen {
 		width: calc(100% - 20px);
 		position: absolute;
+
 		img {
 			width: 100%;
 			height: 624px;
 			object-fit: cover;
 		}
 	}
+
 	&__contenido {
 		width: 50%;
 		margin: 0 auto;
@@ -25,14 +28,17 @@
 		text-align: center;
 		color: @color-claro;
 	}
+
 	&__categoria {
 		color: fade(@color-claro, 50%);
 		.oswald;
 	}
+
 	&__titulo {
 		.oswald;
 		.fuente(@fuente-base * 2.7);
 	}
+
 	&__autor {
 		width: 150px;
 		margin: 0 auto;
@@ -41,6 +47,7 @@
 		left: 0;
 		right: 0;
 		color: @color-claro;
+
 		img {
 			width: 60px;
 			height: 50px;
@@ -48,9 +55,11 @@
 			padding-right: 10px;
 			border-radius: 100%;
 		}
+
 		span {
 			display: inline-block;
 		}
+
 		&-titulo {
 			color: fade(@color-claro, 50%);
 		}
