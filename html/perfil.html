@@ -1,15 +1,29 @@
-
-<head>
-  <title>Perfil - PlatziGames</title>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"/>
-  <link rel="stylesheet" href="../css/estilos.css"/>
-  <link rel="stylesheet" href="../css/perfiles.css"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perfil - PlatziGames</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/perfiles.css">
+  </head>
   <body>
+    <header class="cabecera-de-pagina"><a class="logo--header" href="home.html"><img src="../images/icons/logo--header.svg"></a>
+      <div class="nav--header">
+        <ul>
+          <li><a href="#">playstation</a></li>
+          <li><a href="#">xbox</a></li>
+          <li><a href="#">nintendo</a></li>
+          <li><a href="#">pc</a></li>
+          <li><a href="#">mobile</a></li>
+        </ul>
+      </div>
+      <div class="busqueda--header"><img src="../images/icons/header-icon-buscar.svg"><span>search</span></div>
+    </header>
     <main>
-      <section class="perfil"><img class="perfil__avatar" src="../images/avatar.jpg"/>
+      <section class="perfil"><img class="perfil__avatar" src="../images/avatar.jpg">
         <h2 class="perfil__nombre">John Wick</h2>
         <h3 class="perfil__titulo">Asesino Legendario</h3><a class="perfil__boton" href="#">Seguir</a>
         <div class="estadisticas--perfil">
@@ -27,19 +41,19 @@
           <h2>Acerca de Mi</h2>
           <h3>Asesino a sueldo retirado y amante de perros</h3>
         </div>
-        <div class="ubicacion--perfil"><img src="../images/icons/ubicacion-icon-negro.svg" height="40"/>
+        <div class="ubicacion--perfil"><img src="../images/icons/ubicacion-icon-negro.svg" height="40">
           <h2>Estados Unidos</h2>
           <h3>227km cerca</h3>
         </div>
         <div class="galeria">
           <h2>Mis fotos</h2>
-          <div class="galeria__foto-principal"><img src="../images/galeria1.jpg"/></div>
-          <div class="galeria__fotos-adicionales"><img src="../images/galeria2.jpg"/><img src="../images/galeria3.jpg"/><img src="../images/galeria4.jpg"/></div>
+          <div class="galeria__foto-principal"><img src="../images/galeria1.jpg"></div>
+          <div class="galeria__fotos-adicionales"><img src="../images/galeria2.jpg"><img src="../images/galeria3.jpg"><img src="../images/galeria4.jpg"></div>
         </div>
       </section>
       <aside class="articulos">
         <div class="articulo"><span class="articulo__categoria">Playstation</span>
-          <h3 class="articulo__titulo">GTA VI: Filtraciones de información  que son bastante dudosas</h3>
+          <h3 class="articulo__titulo">GTA VI: Filtraciones de información que son bastante dudosas</h3>
           <p class="articulo__descripcion">Recientemente se filtro en internet importante cantidad de supuesta información sobre Grand Theft Auto VI (GTA VI) que nos ofrece una muy buena idea de lo que podemos esperar.</p>
         </div>
         <div class="articulo"><span class="articulo__categoria">Switch</span>
@@ -55,7 +69,7 @@
     <footer class="pie-de-pagina"><a href="https://twitter.com/crismedina19">@crismeca19</a></footer>
     <script>
       <const>getScrollBarWidth = () => innerWidth - document.documentElement.clientWidth</const>
-      <document class="documentElement style setProperty" --scroll-bar="--scroll-bar" getScrollBarWidth()="getScrollBarWidth()"></document>
+      <document class="documentElement style setProperty" --scroll-bar getScrollBarWidth()></document>
     </script>
   </body>
-</head>
+</html>

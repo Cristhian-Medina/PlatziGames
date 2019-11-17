@@ -1,21 +1,35 @@
-
-<head>
-  <title>Buscador - PlatziGames</title>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"/>
-  <link rel="stylesheet" href="../css/estilos.css"/>
-  <link rel="stylesheet" href="../css/buscador.css"/>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buscador - PlatziGames</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/buscadores.css">
+  </head>
   <body>
+    <header class="cabecera-de-pagina"><a class="logo--header" href="home.html"><img src="../images/icons/logo--header.svg"></a>
+      <div class="nav--header">
+        <ul>
+          <li><a href="#">playstation</a></li>
+          <li><a href="#">xbox</a></li>
+          <li><a href="#">nintendo</a></li>
+          <li><a href="#">pc</a></li>
+          <li><a href="#">mobile</a></li>
+        </ul>
+      </div>
+      <div class="busqueda--header"><img src="../images/icons/header-icon-buscar.svg"><span>search</span></div>
+    </header>
     <div class="buscador">
       <form>
-        <input class="buscador__input" type="text" placeholder="Playstation"/>
+        <input class="buscador__input" type="text" placeholder="Playstation">
       </form>
     </div>
     <header class="encabezado--con-filtros">
       <h2>20 Resultados para "Playstation"</h2>
-      <div class="filtros"><span>Filtrar Por</span><a class="fa fa-th-large" href="#"></a><a class="fa fa-bars" href="#"></a></div>
+      <div class="filtros"><span>Filtrar Por</span><a href="#"><img src="../images/icons/filtros-icon-cuadro.svg"></a><a href="#"><img src="../images/icons/filtros-icon-lista.svg"></a></div>
     </header>
     <section class="contenido">
       <div class="caja">
@@ -33,7 +47,7 @@
         </div>
       </div>
       <div class="caja">
-        <div class="caja__imagen"><img src="../images/ff.jpg"/></div>
+        <div class="caja__imagen"><img src="../images/final-fantasy.jpg"/></div>
         <div class="caja__contenido"><span class="caja__categoria">Video</span>
           <h3>Final Fantasy XIV recibirá una serie live-action en televisión </h3>
           <p>Final Fantasy XIV Online recibirá una adaptación aTV de parte de Square Enix con Sony Pictures Television y Hivemind.</p><a>Leer mas...</a>
@@ -43,7 +57,7 @@
     <footer class="pie-de-pagina"><a href="https://twitter.com/crismedina19">@crismeca19</a></footer>
     <script>
       <const>getScrollBarWidth = () => innerWidth - document.documentElement.clientWidth</const>
-      <document class="documentElement style setProperty" --scroll-bar="--scroll-bar" getScrollBarWidth()="getScrollBarWidth()"></document>
+      <document class="documentElement style setProperty" --scroll-bar getScrollBarWidth()></document>
     </script>
   </body>
-</head>
+</html>

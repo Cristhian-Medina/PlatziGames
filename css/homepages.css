@@ -1,0 +1,151 @@
+h1 {
+  font-size: 30px;
+  margin: 0; }
+
+h2 {
+  font-size: 25px;
+  margin: 0; }
+
+h3 {
+  font-size: 20px;
+  margin: 0; }
+
+.contenedor--home {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  overflow: hidden; }
+
+.contenedor--cajas {
+  width: 90%;
+  min-height: 630px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.caja {
+  max-width: 350px;
+  height: 600px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 5px 15px 0px fade(#333333, 0.4);
+  box-shadow: 0px 5px 15px 0px fade(#333333, 0.4); }
+  .caja__imagen {
+    overflow: hidden; }
+    .caja__imagen img {
+      width: 100%; }
+  .caja__contenido {
+    padding: 25px;
+    background-color: #ffffff; }
+  .caja span {
+    color: #8841da;
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .caja a {
+    text-decoration: none;
+    color: #012179;
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.caja--con-fondo .caja--grande {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4; }
+
+.caja--con-fondo .caja--mediana {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4; }
+
+.caja--con-fondo .caja--grande,
+.caja--con-fondo .caja--mediana,
+.caja--con-fondo .caja--pequena {
+  height: 100%;
+  position: relative; }
+  .caja--con-fondo .caja--grande img,
+  .caja--con-fondo .caja--mediana img,
+  .caja--con-fondo .caja--pequena img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.caja--con-fondo .caja__contenido {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.caja-rdr2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5; }
+
+.banner--homepage {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  color: #ffffff;
+  background-color: #8841da; }
+
+.caja-ff {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3; }
+
+.caja-xbox {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4; }
+
+.caja-fortnite {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5; }
+
+.sidebar--listado {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: #333333;
+  background-color: #ffffff; }

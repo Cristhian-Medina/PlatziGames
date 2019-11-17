@@ -1,0 +1,48 @@
+.cabecera-de-pagina {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-size: 15px;
+  color: $color-variacion;
+  background-color: $color-claro;
+  border-bottom: 2px solid get_opacity($color-primario,0.2);
+}
+.logo--header {
+  align-self: flex-start;
+  img {
+    height: 50px;
+  }
+}
+.nav--header {
+  min-width: 500px;
+  margin-left: 50px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: $color-variacion;
+    @include titulo($fuente2);
+    &:hover {
+      text-decoration: underline;
+    }
+  } 
+}
+.busqueda--header {
+  margin-left: auto;
+  img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  span {
+    vertical-align: text-bottom;
+    @include titulo($fuente2);
+  }
+}

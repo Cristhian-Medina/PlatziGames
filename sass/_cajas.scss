@@ -1,0 +1,72 @@
+.contenedor--cajas {
+  width: 90%;
+  min-height: 630px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.caja {
+  max-width: 350px;
+  height: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px 0px fade($color-primario, 0.4);
+
+  &__imagen {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__contenido {
+    padding: 25px;
+    background-color: $color-claro;
+  }
+
+  span {
+    color: $color-secundario;
+    @include titulo($fuente2);
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-variacion;
+    @include titulo($fuente2);
+  }
+}
+
+.caja--con-fondo {
+  .caja--grande {
+    grid-row: 1/3;
+    grid-column: 1/4;
+  }
+
+  .caja--mediana {
+    grid-row: 3/4;
+    grid-column: 2/4;
+  }
+
+  .caja--grande,
+  .caja--mediana,
+  .caja--pequena {
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+
+  .caja__contenido {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
