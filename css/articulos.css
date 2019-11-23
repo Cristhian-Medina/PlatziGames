@@ -79,6 +79,7 @@
 .articulo--principal__intro {
   font-size: 25.2px;
   line-height: 32.76px;
+  margin-bottom: 20px;
 }
 .articulo--principal h2 {
   margin: 40px 0;
@@ -89,6 +90,10 @@
 }
 .articulo--principal h3 {
   color: #8841da;
+  margin-bottom: 15px;
+}
+.articulo--principal p {
+  margin-bottom: 15px;
 }
 .contenedor--cajas {
   width: 90%;
@@ -125,6 +130,10 @@
   font-family: 'Oswald', Verdana;
   text-transform: uppercase;
   font-weight: 700;
+}
+.caja h3,
+.caja p {
+  margin-bottom: 15px;
 }
 .caja a {
   text-decoration: none;

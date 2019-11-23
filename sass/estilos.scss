@@ -1,6 +1,6 @@
-@import "globales.scss";
-@import "headers.scss";
-@import "footers.scss";
+@import "_globales.scss";
+@import "_headers.scss";
+@import "_footers.scss";
 
 :root {
   --scroll-bar: 13px;
@@ -13,9 +13,9 @@
 body {
   width: calc(100vw - var(--scroll-bar));
   margin: 0;
-  font-size: 18px;
   line-height: 23.4px;
   @include titulo($fuente1);
+  @include font-size($fuente-base);
 }
 h1,
 h2,

@@ -12,13 +12,13 @@
   }
   h3 {
     display: block;
-    font-size: 20px;
     text-align: center;
     @include titulo($fuente2);
+    @include font-size(20px);
   }
   span {
-    font-size: 12px;
     text-align: center;
     @include titulo($fuente2);
+    @include font-size(12px);
   }
 }

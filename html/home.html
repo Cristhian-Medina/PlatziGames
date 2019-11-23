@@ -21,6 +21,7 @@
         </ul>
       </div>
       <div class="busqueda--header"><img src="../images/icons/header-icon-buscar.svg"><span>search</span></div>
+      <div class="burger-menu--header"><img src="../images/icons/header-icon-menu.svg"></div>
     </header>
     <main class="contenedor--home">
       <div class="caja--con-fondo caja--grande"><img src="../images/cyberpunk-2077.jpg"/>
@@ -64,17 +65,14 @@
       </div>
       <div class="sidebar--listado">
         <h3>Noticias Destacadas</h3>
-        <ul><span>1</span>
-          <h3>GTA VI: Filtraciones que son bastante dudosas</h3><span>2</span>
-          <h3>Secuela de The Legend of Zelda: Breath of the Wild anunciada en el E3 2019</h3><span>3</span>
-          <h3>Red Dead Online recibe actualización masiva y sale de Beta</h3>
+        <ul>
+          <li><a href="#"><span class="sidebar--listado__numero">1</span><span class="sidebar--listado__titulo">GTA VI: Filtraciones que son bastante dudosas</span></a></li>
+          <li><a href="#"><span class="sidebar--listado__numero">2</span><span class="sidebar--listado__titulo">Secuela de The Legend of Zelda: Breath of the Wild anunciada en el E3 2019</span></a></li>
+          <li><a href="#"><span class="sidebar--listado__numero">3</span><span class="sidebar--listado__titulo">Red Dead Online recibe actualización masiva y sale de Beta</span></a></li>
         </ul>
       </div>
     </main>
     <footer class="pie-de-pagina"><a href="https://twitter.com/crismedina19">@crismeca19</a></footer>
-    <script>
-      <const>getScrollBarWidth = () => innerWidth - document.documentElement.clientWidth</const>
-      <document class="documentElement style setProperty" --scroll-bar getScrollBarWidth()></document>
-    </script>
+    <script src="../scripts/scroll.js"></script>
   </body>
 </html>

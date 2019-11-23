@@ -9,20 +9,19 @@
   margin-bottom: 75px;
   border-bottom: 3px solid $color-secundario;
   &__categoria {
-    font-size: 15px;
     color: $color-secundario;
     @include titulo($fuente2);
+    @include font-size(15px);
   }
   &__titulo {
-    font-size: 20px;
     padding-right: 80px;
     margin-bottom: 10px;
     @include titulo($fuente2);
+    @include font-size(20px);
   }
   &__descripcion {
-    font-size: 16px;
     margin-bottom: 30px;
     padding-right: 50px;
-    line-height: 1.7rem;
+    @include font-size(16px);
   }
 }

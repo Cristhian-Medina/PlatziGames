@@ -38,8 +38,10 @@ mixin caja--con-fondo-pequena(clase, imagen, etiqueta, titulo)
 			p=contenido
 
 mixin listado-categoria(posicion, titulo)
-	span=posicion
-	h3=titulo
+	li
+		a(href="#")
+			span.sidebar--listado__numero=posicion
+			span.sidebar--listado__titulo=titulo
 
 mixin stats(contador, categoria)
 	.stat

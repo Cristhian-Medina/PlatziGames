@@ -11,8 +11,8 @@
   & a {
     text-decoration: none;
     color: $color-claro;
-    font-size: 18px;
-    line-height: 23.4px;
     @include titulo($fuente2);
+    @include font-size($fuente-base);
+    line-height: 23.4px;
   }
 }

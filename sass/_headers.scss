@@ -5,44 +5,78 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 0 20px;
-  font-size: 15px;
   color: $color-variacion;
   background-color: $color-claro;
-  border-bottom: 2px solid get_opacity($color-primario,0.2);
+  border-bottom: 2px solid get_opacity($color-primario, 0.2);
+  @include font-size(15px);
 }
+
 .logo--header {
   align-self: flex-start;
+
   img {
     height: 50px;
   }
 }
+
 .nav--header {
+  display: none;
   min-width: 500px;
   margin-left: 50px;
+
   ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
+
   li {
     list-style: none;
   }
+
   a {
     text-decoration: none;
     color: $color-variacion;
     @include titulo($fuente2);
+
     &:hover {
       text-decoration: underline;
     }
-  } 
+  }
+
+  @include media(desktop-s) {
+    display: flex;
+  }
 }
+
 .busqueda--header {
+  display: none;
   margin-left: auto;
+
   img {
     height: 20px;
     margin-right: 10px;
   }
+
   span {
     vertical-align: text-bottom;
     @include titulo($fuente2);
+  }
+
+  @include media(desktop-s) {
+    display: flex;
+  }
+}
+
+.burger-menu--header {
+  margin-left: auto;
+
+  img {
+    height: 40px;
+    cursor: pointer;
+  }
+
+  @include media(desktop-s) {
+    display: none;
   }
 }

@@ -1,0 +1,34 @@
+.sidebar--listado {
+  max-width: 300px;
+  grid-area: sidebar;
+  justify-self: center;
+  padding: 40px 20px;
+  @include caja;
+
+  h3 {
+    @include font-size(20px);
+    @include titulo($fuente2);
+  }
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    li {
+      list-style-type: none;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        color: $color-primario;
+
+        .sidebar--listado__numero {
+          padding-right: 20px;
+          color: get_opacity($color-primario, 0.5);
+        }
+      }
+    }
+  }
+}
