@@ -28,9 +28,9 @@
     width: 100px;
     margin: 14px auto;
     padding: 8px 0;
-    border-radius: 20px;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
     color: $color-claro;
     border: 2px solid get_opacity($color-claro, 0.5);
     background-color: get_opacity($color-primario, 0.2);

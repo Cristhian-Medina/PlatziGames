@@ -1,7 +1,7 @@
 .banner--homepage {
+  grid-area: banner;
   max-width: 300px;
   padding: 40px 20px;
-  grid-area: banner;
   justify-self: center;
   color: $color-claro;
   background-color: $color-secundario;
@@ -20,9 +20,9 @@
     display: block;
     width: 100px;
     padding: 8px 0;
-    border-radius: 20px;
     text-decoration: none;
     text-align: center;
+    border-radius: 20px;
     color: $color-claro;
     border: 2px solid get_opacity($color-claro, 0.5);
     background-color: get_opacity($color-primario, 0.2);

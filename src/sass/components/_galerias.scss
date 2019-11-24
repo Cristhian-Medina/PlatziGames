@@ -5,8 +5,8 @@
   padding: 20px 0 0 30px;
   @include caja;
   &__foto-principal {
-    float: left;
     margin-right: 10px;
+    float: left;
   }
   &__fotos-adicionales img {
     height: 70px;
@@ -15,7 +15,6 @@
   }
   h2 {
     margin-bottom: 10px;
-    font-weight: 600px;
     @include titulo($fuente2);
     @include font-size(20px);
   }
