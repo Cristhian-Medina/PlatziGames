@@ -1,6 +1,6 @@
 .galeria {
   width: 70%;
-  height: 250px;
+  min-height: 250px;
   margin: 10px auto;
   padding: 20px 0 0 30px;
   @include caja;

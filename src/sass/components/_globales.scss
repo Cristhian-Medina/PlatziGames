@@ -47,6 +47,7 @@ $fuente-base: 18px;
   #{$header} {
     font-size: $size;
     margin: 0;
+    @include titulo($fuente2);
   }
 }
 

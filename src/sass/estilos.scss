@@ -1,29 +1,29 @@
-@import "_globales.scss";
-@import "_headers.scss";
-@import "_footers.scss";
+@import "components/_globales.scss";
+@import "components/_headers.scss";
+@import "components/_footers.scss";
 
 :root {
   --scroll-bar: 13px;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   width: calc(100vw - var(--scroll-bar));
-  margin: 0;
-  line-height: 23.4px;
   @include titulo($fuente1);
   @include font-size($fuente-base);
 }
-h1,
-h2,
-h3 {
-  @include titulo($fuente2);
-}
+
 main {
   display: flex;
   width: 100%;
   min-height: 100vh;
+
+  @include media(mobile-only) {
+    flex-direction: column;
+  }
 }

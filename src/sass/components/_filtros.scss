@@ -1,0 +1,68 @@
+.encabezado--con-filtros {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    @include font-size(30px);
+    @include titulo($fuente2);
+  }
+
+  .filtros {
+    width: 230px;
+    height: 75px;
+    padding: 20px;
+    flex-shrink: 0;
+    box-shadow: 0px 5px 15px 0px get_opacity($color-primario, 0.4);
+
+    span {
+      @include titulo($fuente2);
+      font-weight: 400;
+    }
+
+    a img {
+      width: 25px;
+      height: 25px;
+      margin-left: 20px;
+    }
+  }
+
+  @include media(desktop-s) {
+    h2 {
+      @include font-size(40px);
+    }
+
+    .filtros {
+      width: 250px;
+    }
+  }
+
+  @include media(mobile-only) {
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .filtros {
+      align-self: flex-end;
+    }
+  }
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  @include media(desktop-s) {
+    flex-direction: row;
+  }
+}

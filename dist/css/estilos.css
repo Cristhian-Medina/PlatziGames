@@ -1,14 +1,23 @@
 h1 {
   font-size: 30px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 h2 {
   font-size: 25px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 h3 {
   font-size: 20px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .cabecera-de-pagina {
   width: 100%;
@@ -126,19 +135,10 @@ h3 {
 
 body {
   width: calc(100vw - var(--scroll-bar));
-  margin: 0;
-  line-height: 23.4px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem; }
-
-h1,
-h2,
-h3 {
-  font-family: "Oswald", Verdana;
-  text-transform: uppercase;
-  font-weight: 700; }
 
 main {
   display: -webkit-box;
@@ -146,3 +146,9 @@ main {
   display: flex;
   width: 100%;
   min-height: 100vh; }
+  @media only screen and (max-width: 768px) {
+    main {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }

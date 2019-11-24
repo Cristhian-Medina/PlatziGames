@@ -1,14 +1,23 @@
 h1 {
   font-size: 30px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 h2 {
   font-size: 25px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 h3 {
   font-size: 20px;
-  margin: 0; }
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .perfil {
   width: 50%;
@@ -53,6 +62,9 @@ h3 {
     font-size: 15px;
     font-size: 0.9375rem;
     line-height: 1.40625rem; }
+  @media only screen and (max-width: 768px) {
+    .perfil {
+      width: 100%; } }
 
 .perfil__minibio {
   margin: 0 auto;
@@ -135,7 +147,7 @@ h3 {
 
 .galeria {
   width: 70%;
-  height: 250px;
+  min-height: 250px;
   margin: 10px auto;
   padding: 20px 0 0 30px;
   border-radius: 20px;
@@ -165,6 +177,9 @@ h3 {
   padding: 50px 0 0 50px;
   color: #333333;
   background-color: #ffffff; }
+  @media only screen and (max-width: 768px) {
+    .articulos {
+      width: 100%; } }
 
 .articulo {
   margin-bottom: 75px;
@@ -192,3 +207,25 @@ h3 {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5rem; }
+
+.articulo--principal {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  .articulo--principal__intro {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 2.34375rem; }
+  .articulo--principal h2 {
+    margin: 40px 0;
+    font-size: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 4.6875rem; }
+  .articulo--principal h3 {
+    color: #8841da;
+    margin-bottom: 15px; }
+  .articulo--principal p {
+    margin-bottom: 15px; }

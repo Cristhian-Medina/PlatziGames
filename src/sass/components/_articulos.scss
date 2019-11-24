@@ -3,25 +3,59 @@
   padding: 50px 0 0 50px;
   color: $color-primario;
   background-color: $color-claro;
+
+  @include media(mobile-only) {
+    width: 100%;
+  }
 }
 
 .articulo {
   margin-bottom: 75px;
   border-bottom: 3px solid $color-secundario;
+
   &__categoria {
     color: $color-secundario;
     @include titulo($fuente2);
     @include font-size(15px);
   }
+
   &__titulo {
     padding-right: 80px;
     margin-bottom: 10px;
     @include titulo($fuente2);
     @include font-size(20px);
   }
+
   &__descripcion {
     margin-bottom: 30px;
     padding-right: 50px;
     @include font-size(16px);
+  }
+}
+
+.articulo--principal {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &__intro {
+    margin-bottom: 20px;
+    @include font-size(25px);
+  }
+
+  h2 {
+    margin: 40px 0;
+    font-size: 50px;
+    text-align: center;
+    @include font-size(50px);
+  }
+
+  h3 {
+    color: $color-secundario;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
   }
 }
