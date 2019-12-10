@@ -1,0 +1,382 @@
+h1 {
+  font-size: 30px;
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  font-family: "Oswald", Verdana;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.intro {
+  width: 100%;
+  height: 650px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.4);
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.4); }
+  .intro__imagen {
+    width: calc(100% - 20px);
+    position: absolute; }
+    .intro__imagen img {
+      width: 100%;
+      height: 624px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .intro__contenido {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 156px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff; }
+    @media only screen and (min-width: 992px) {
+      .intro__contenido {
+        width: 50%; } }
+  .intro__categoria {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .intro__titulo {
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 3.75rem; }
+    @media only screen and (min-width: 1200px) {
+      .intro__titulo {
+        font-size: 50px;
+        font-size: 3.125rem;
+        line-height: 4.6875rem; } }
+  .intro__autor {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    color: #ffffff; }
+    .intro__autor img {
+      width: 60px;
+      height: 50px;
+      float: left;
+      padding-right: 10px;
+      border-radius: 100%; }
+    .intro__autor span {
+      display: inline-block; }
+    .intro__autor-titulo {
+      color: rgba(255, 255, 255, 0.5); }
+    @media only screen and (max-width: 768px) {
+      .intro__autor {
+        top: 450px; } }
+
+.articulos {
+  width: 50%;
+  padding: 50px 0 0 50px;
+  color: #333333;
+  background-color: #ffffff; }
+  @media only screen and (max-width: 768px) {
+    .articulos {
+      width: 100%; } }
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid #8841da; }
+  .articulo__categoria {
+    color: #8841da;
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.40625rem; }
+  .articulo__titulo {
+    padding-right: 80px;
+    margin-bottom: 10px;
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.875rem; }
+  .articulo__descripcion {
+    margin-bottom: 30px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5rem; }
+
+.articulo--principal {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  .articulo--principal__intro {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 2.34375rem; }
+  .articulo--principal h2 {
+    margin: 40px 0;
+    font-size: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 4.6875rem; }
+  .articulo--principal h3 {
+    color: #8841da;
+    margin-bottom: 15px; }
+  .articulo--principal p {
+    margin-bottom: 15px; }
+
+.contenedor--cajas {
+  width: 90%;
+  min-height: 630px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (min-width: 1200px) {
+    .contenedor--cajas {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+.caja {
+  max-width: 350px;
+  height: 600px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.4);
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.4); }
+  .caja__imagen {
+    overflow: hidden; }
+    .caja__imagen img {
+      width: 100%; }
+  .caja__contenido {
+    padding: 25px;
+    background-color: #ffffff; }
+    .caja__contenido__categoria {
+      color: #8841da;
+      font-family: "Oswald", Verdana;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .caja__contenido h3,
+    .caja__contenido p {
+      margin-bottom: 15px; }
+    .caja__contenido a {
+      text-decoration: none;
+      color: #012179;
+      font-family: "Oswald", Verdana;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.contenido .caja {
+  max-width: 370px;
+  min-width: 280px; }
+  .contenido .caja__imagen {
+    overflow: hidden; }
+    .contenido .caja__imagen img {
+      width: 100%;
+      height: 230px; }
+  .contenido .caja__contenido {
+    height: 370px; }
+    .contenido .caja__contenido__categoria {
+      color: #8841da;
+      font-family: "Oswald", Verdana;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .contenido .caja__contenido h3,
+    .contenido .caja__contenido p {
+      margin-bottom: 20px; }
+  @media only screen and (min-width: 992px) {
+    .contenido .caja {
+      margin-right: 15px; } }
+
+.contenedor--home {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 15px;
+  -ms-flex-line-pack: end;
+  align-content: end;
+  grid-template-areas: "grande grande" "grande grande" "rdr2 banner" "sidebar banner" "sidebar ff" "mediana mediana" "xbox fortnite";
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 992px) {
+    .contenedor--home {
+      max-width: 1200px;
+      -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      -ms-grid-rows: 1fr 15px 1fr 15px 1fr 15px 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "grande grande grande rdr2" "grande grande grande banner" "sidebar mediana mediana banner" "sidebar ff xbox fortnite"; } }
+  @media only screen and (max-width: 768px) {
+    .contenedor--home {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative; } }
+
+.caja--con-fondo {
+  position: relative;
+  background-color: #333333;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover; }
+  .caja--con-fondo img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    opacity: 0.4; }
+  .caja--con-fondo .caja__contenido {
+    padding: 30px 40% 0 30px;
+    position: absolute;
+    color: #ffffff;
+    background-color: transparent; }
+  .caja--con-fondo .caja__etiqueta {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #8841da;
+    font-family: "Oswald", Verdana;
+    text-transform: uppercase;
+    font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    .caja--con-fondo {
+      width: 300px;
+      height: 300px; }
+      .caja--con-fondo img {
+        height: 100%; } }
+
+.caja--grande {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  height: 400px;
+  grid-area: grande; }
+  .caja--grande .caja__contenido {
+    width: 90%;
+    height: 80%;
+    padding: 0;
+    left: 5%;
+    top: 10%;
+    text-align: center; }
+    .caja--grande .caja__contenido h3 {
+      font-size: 40px;
+      font-size: 2.5rem;
+      line-height: 3.75rem; }
+  @media only screen and (min-width: 992px) {
+    .caja--grande {
+      height: 600px; }
+      .caja--grande .caja__contenido {
+        width: 60%;
+        height: 70%;
+        left: 20%;
+        top: 15%; }
+        .caja--grande .caja__contenido h3 {
+          font-size: 50px;
+          font-size: 3.125rem;
+          line-height: 4.6875rem; } }
+  @media only screen and (max-width: 768px) {
+    .caja--grande {
+      width: 100%;
+      min-width: 300px; }
+      .caja--grande img {
+        width: auto; }
+      .caja--grande .caja__contenido h3 {
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 2.8125rem; } }
+
+.caja--mediana {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mediana; }
+
+.caja-rdr2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: rdr2; }
+
+.caja-ff {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: ff; }
+
+.caja-xbox {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: xbox; }
+
+.caja-fortnite {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  grid-area: fortnite; }
+
+@media only screen and (min-width: 992px) {
+    .caja--grande {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5; }
+    .caja--mediana {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3; }
+    .caja-rdr2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7; }
+    .caja-ff {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3; }
+    .caja-xbox {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5; }
+    .caja-fortnite {
+    -ms-grid-row: 7;
+    -ms-grid-column: 7; } }

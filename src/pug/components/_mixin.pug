@@ -1,0 +1,49 @@
+mixin article(categoria, titulo, contenido)
+	.articulo
+		span.articulo__categoria=categoria
+		h3.articulo__titulo=titulo
+		p.articulo__descripcion=contenido
+		//- a(href=link) Leer mas...
+
+mixin caja(imagen, categoria, titulo, contenido, link)
+	.caja
+		.caja__imagen: img(src="../images/"+imagen)
+		.caja__contenido
+			span.caja__categoria=categoria
+			h3=titulo
+			p=contenido
+			a(href=link) Leer mas...
+
+mixin caja--con-fondo-grande(imagen, etiqueta, titulo, contenido)
+	.caja--con-fondo.caja--grande
+		img(src="../images/"+imagen)
+		.caja__contenido
+			span.caja__etiqueta=etiqueta
+			h3=titulo
+			p=contenido
+
+mixin caja--con-fondo-mediana(clase, imagen, etiqueta, titulo)
+	.caja--con-fondo.caja--mediana(class=clase)
+		img(src="../images/"+imagen)
+		.caja__contenido
+			span.caja__etiqueta=etiqueta
+			h3=titulo
+
+mixin caja--con-fondo-pequena(clase, imagen, etiqueta, titulo)
+	.caja--con-fondo.caja--pequena(class=clase)
+		img(src="../images/"+imagen)
+		.caja__contenido
+			span.caja__etiqueta=etiqueta
+			h3=titulo
+			p=contenido
+
+mixin listado-categoria(posicion, titulo)
+	li
+		a(href="#")
+			span.sidebar--listado__numero=posicion
+			span.sidebar--listado__titulo=titulo
+
+mixin stats(contador, categoria)
+	.stat
+		h3=contador
+		span=categoria

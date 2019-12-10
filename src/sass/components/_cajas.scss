@@ -1,0 +1,232 @@
+// articulos
+.contenedor--cajas {
+  display: flex;
+  width: 90%;
+  min-height: 630px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop-m) {
+    flex-direction: row;
+  }
+}
+
+.caja {
+  max-width: 350px;
+  height: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px 0px get_opacity($color-primario, 0.4);
+
+  &__imagen {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__contenido {
+    padding: 25px;
+    background-color: $color-claro;
+
+    &__categoria {
+      color: $color-secundario;
+      @include titulo($fuente2);
+    }
+
+    h3,
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-variacion;
+      @include titulo($fuente2);
+    }
+  }
+}
+
+// buscadores
+.contenido {
+  .caja {
+    max-width: 370px;
+    min-width: 280px;
+
+    &__imagen {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 230px;
+      }
+    }
+
+    &__contenido {
+      height: 370px;
+
+      &__categoria {
+        color: $color-secundario;
+        @include titulo($fuente2);
+      }
+
+      h3,
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include media(desktop-s) {
+      margin-right: 15px;
+    }
+  }
+}
+
+// homepages
+.contenedor--home {
+  display: grid;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 15px;
+  align-content: end;
+  grid-template-areas:
+    "grande grande"
+    "grande grande"
+    "rdr2 banner"
+    "sidebar banner"
+    "sidebar ff"
+    "mediana mediana"
+    "xbox fortnite";
+
+  @include media(desktop-s) {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "grande grande grande rdr2"
+      "grande grande grande banner"
+      "sidebar mediana mediana banner"
+      "sidebar ff xbox fortnite";
+  }
+
+  @include media(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.caja--con-fondo {
+  position: relative;
+  background-color: $color-primario;
+  overflow: hidden;
+  object-fit: cover;
+
+  img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    opacity: 0.4;
+  }
+
+  .caja__contenido {
+    padding: 30px 40% 0 30px;
+    position: absolute;
+    color: $color-claro;
+    background-color: transparent;
+  }
+
+  .caja__etiqueta {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: $color-claro;
+    background-color: $color-secundario;
+    @include titulo($fuente2);
+  }
+
+  @include media(mobile-only) {
+    width: 300px;
+    height: 300px;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.caja--grande {
+  grid-area: grande;
+  height: 400px;
+
+  .caja__contenido {
+    width: 90%;
+    height: 80%;
+    padding: 0;
+    left: 5%;
+    top: 10%;
+    text-align: center;
+
+    h3 {
+      @include font-size(40px);
+    }
+  }
+
+  @include media(desktop-s) {
+    height: 600px;
+
+    .caja__contenido {
+      width: 60%;
+      height: 70%;
+      left: 20%;
+      top: 15%;
+
+      h3 {
+        @include font-size(50px);
+      }
+    }
+  }
+
+  @include media(mobile-only) {
+    width: 100%;
+    min-width: 300px;
+
+    img {
+      width: auto;
+    }
+
+    .caja__contenido h3 {
+      @include font-size(30px);
+    }
+  }
+}
+
+.caja--mediana {
+  grid-area: mediana;
+}
+
+.caja-rdr2 {
+  grid-area: rdr2;
+}
+
+.caja-ff {
+  grid-area: ff;
+}
+
+.caja-xbox {
+  grid-area: xbox;
+}
+
+.caja-fortnite {
+  grid-area: fortnite;
+}
