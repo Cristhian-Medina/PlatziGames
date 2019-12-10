@@ -74,6 +74,9 @@ h3 {
 .busqueda--header {
   display: none;
   margin-left: auto; }
+  .busqueda--header a {
+    text-decoration: none;
+    color: #012179; }
   .busqueda--header img {
     height: 20px;
     margin-right: 10px; }
